@@ -1,109 +1,93 @@
 body {
-  color: #000000;
   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-  overflow: auto;
+  background-color: black;
+  color: white;
   display: flex;
-  height: 100vh;
-  margin: 0;
   flex-direction: column;
+  margin: 0;
+  height: 100vh;
 }
 
 .header {
-  background-color: #ffc0cb;
+  background-color: lavender;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 200px;
+  justify-content: space-around;
+  padding: 4px;
+  margin-bottom: 8px;
 }
 
 .logo {
-  font-size: 32px;
+  color: black;
+  font-size: 26px;
   font-weight: 700;
-  padding: 16px 0;
 }
 
 ul {
   list-style: none;
   display: flex;
   gap: 16px;
+  padding: 0;
+  margin: 0;
 }
 
 a {
-  color: #000000;
+  color: black;
   text-decoration: none;
 }
 
-.content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 32px;
-  padding: 48px 200px;
-}
-
-.item {
-  border: 2px solid #000000;
+select {
+  color: black;
+  border: 2px solid white;
   border-radius: 8px;
-  box-shadow: 2px 4px 12px .5;
-  width: 200px;
-  height: 200px;
-  padding: 8px;
+  padding: 4px 16px;
 }
 
 .container {
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+p {
+  width: fit-content;
+}
+
+.stretch {
   display: flex;
   flex: 1;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.notification {
+.splash {
+  background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url("./content/img/splash.jpg");
+  filter: brightness(100%);
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
-.modal {
-  background-color: rgb(133, 135, 255);
+.begin {
+  background-color: lavender;
+  color: black;
+  border: 2px solid white;
   border-radius: 8px;
-  padding: 16px 32px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 400px;
-}
-
-.modal-left {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.sub {
-  color: #ffffff;
-  font-weight: 700;
-}
-
-input {
-  border: none;
-}
-
-.notification button {
-  cursor: pointer;
-  background-color: white;
-  border-radius: 8px;
-  border: none;
-  color: #000000;
-  font-weight: 700;
-  padding: 8px 16px;
+  padding: 4px 8px;
 }
 
 .footer {
-  background-color: #ffc0cb;
-  color: #000000;
+  background-color: lavender;
+  color: black;
   display: flex;
   justify-content: center;
-  justify-self: center;
-  padding: 16px 0;
+  align-items: center;
+  padding: 6px 0;
+}
+
+.intro {
+  overflow: hidden;
 }
